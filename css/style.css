@@ -1,0 +1,144 @@
+body{
+  background-image: url("../imagens/banner1.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: bodyframe 8s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+
+}
+
+
+@keyframes inicio {
+  from {background-image: url("../imagens/banner1.jpg");}
+  to { background-image: url('../imagens/paginaInicial.jpg');}
+  
+  
+}
+
+@keyframes bodyframe {
+  from {background-image: url("../imagens/banner1.jpg");}
+  to { background-image: url("../imagens/banner2.jpg");}
+  
+  
+}
+
+
+.paginaInicial {
+    background-image: url('../imagens/paginaInicial.jpg');
+    height: 755px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation-name: inicio;
+    animation-duration: 10s;
+
+  }
+/*  para as exoeriencias ficarem no centro*/
+  .align-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+    
+  .text12 {
+
+    position: relative;
+    top: 45%;
+    color: white;
+    text-align: justify;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .texto {
+
+    position: relative;
+    top: 45%;
+    color: white;
+    text-align: justify;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .containerModal {
+    position: relative;
+    text-align: center;
+    color: rgb(15, 15, 15);
+  }
+
+  
+
+  .navbar{
+      position: fixed;
+      width: 100%;
+      z-index: 1; /* faz com q a navbar esteja sempre por cima. */
+      background: rgba(255, 255, 255, 0.4) /* Green background with 30% opacity */
+  }
+
+
+  /*  SETA SCROLL DOWN */
+  .wrap {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+  }
+
+  
+  .wrap img {
+    margin: 0px 0 0 -40px;
+    line-height: 60px;
+    position: absolute;
+    left: 50%;
+    bottom: 0px;
+    height: 50px;
+    width: auto;
+  }
+  
+  .bounce {
+    animation-iteration-count: infinite;
+    animation-duration: 1.5s;
+    animation: bounce 3.6s ease infinite;
+    transform-origin: 50% 50%;
+  }
+  
+  @keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+    5.55556% {
+      transform: translateY(0);
+    }
+    11.11111% {
+      transform: translateY(0);
+    }
+    22.22222% {
+      transform: translateY(-15px);
+    }
+    27.77778% {
+      transform: translateY(0);
+    }
+    33.33333% {
+      transform: translateY(-15px);
+    }
+    44.44444% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  /* FIM  SETA SCROLL DOWN */
+  
